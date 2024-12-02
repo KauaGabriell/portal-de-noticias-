@@ -53,8 +53,14 @@ img{
 }
 
 main{
-  margin-top: 40px;
-  gap: 80px;
+  margin-block: 40px;
+  row-gap: 80px;
+  column-gap: 32px;
+  grid-template-columns: 65% 35%;
+  grid-template-areas: 
+  "featured featured"
+  "weekly weelky"
+  "ai aside";
 }
 
 .content-tag{
@@ -67,4 +73,8 @@ main{
   letter-spacing: 0.4em;
   color: var(--text-color-primary);
   box-shadow: 0px 4px 16px hsla(229, 84%, 5%, 0.251);
+}
+
+header{
+  width: 100%;
 }
